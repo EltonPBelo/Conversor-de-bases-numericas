@@ -4,40 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Bases Numéricas</title>
-    <!-- Aqui conectamos o arquivo CSS externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="converter-card">
-        <h2>Conversor de Bases</h2>
-        
+        <h2>🌀 Conversor de Bases</h2>
+        <p class="subtitle">Digite em qualquer campo para converter em tempo real</p>
+
+        <!-- Decimal -->
         <div class="input-group">
-            <label for="dec">Decimal (Base 10)</label>
-            <input type="text" id="dec" placeholder="Ex: 255" autocomplete="off">
-            <div class="error-msg" id="err-dec">Apenas números de 0 a 9 permitidos.</div>
+            <div class="label-row">
+                <label for="dec"><span class="badge badge-dec">DEC</span> Decimal (Base 10)</label>
+                <button class="btn-copy" onclick="copyToClipboard('dec')" title="Copiar">📋</button>
+            </div>
+            <input type="text" id="dec" placeholder="Ex: 42" autocomplete="off">
+            <div class="error-msg" id="err-dec">⚠️ Digite apenas números de 0 a 9</div>
         </div>
 
+        <!-- Binário -->
         <div class="input-group">
-            <label for="bin">Binário (Base 2)</label>
-            <input type="text" id="bin" placeholder="Ex: 11111111" autocomplete="off">
-            <div class="error-msg" id="err-bin">Apenas números 0 e 1 permitidos.</div>
+            <div class="label-row">
+                <label for="bin"><span class="badge badge-bin">BIN</span> Binário (Base 2)</label>
+                <button class="btn-copy" onclick="copyToClipboard('bin')" title="Copiar">📋</button>
+            </div>
+            <input type="text" id="bin" placeholder="Ex: 101010" autocomplete="off">
+            <div class="error-msg" id="err-bin">⚠️ Digite apenas 0 ou 1</div>
         </div>
 
+        <!-- Octal -->
         <div class="input-group">
-            <label for="oct">Octal (Base 8)</label>
-            <input type="text" id="oct" placeholder="Ex: 377" autocomplete="off">
-            <div class="error-msg" id="err-oct">Apenas números de 0 a 7 permitidos.</div>
+            <div class="label-row">
+                <label for="oct"><span class="badge badge-oct">OCT</span> Octal (Base 8)</label>
+                <button class="btn-copy" onclick="copyToClipboard('oct')" title="Copiar">📋</button>
+            </div>
+            <input type="text" id="oct" placeholder="Ex: 52" autocomplete="off">
+            <div class="error-msg" id="err-oct">⚠️ Digite apenas números de 0 a 7</div>
         </div>
 
+        <!-- Hexadecimal -->
         <div class="input-group">
-            <label for="hex">Hexadecimal (Base 16)</label>
-            <input type="text" id="hex" placeholder="Ex: FF" autocomplete="off">
-            <div class="error-msg" id="err-hex">Apenas números (0-9) e letras (A-F) permitidos.</div>
+            <div class="label-row">
+                <label for="hex"><span class="badge badge-hex">HEX</span> Hexadecimal (Base 16)</label>
+                <button class="btn-copy" onclick="copyToClipboard('hex')" title="Copiar">📋</button>
+            </div>
+            <input type="text" id="hex" placeholder="Ex: 2A" autocomplete="off">
+            <div class="error-msg" id="err-hex">⚠️ Digite caracteres válidos (0-9, A-F)</div>
         </div>
+
+        <button id="btn-clear" onclick="clearAll()">Limpar Campos</button>
     </div>
 
-    <!-- Aqui conectamos o arquivo JavaScript externo -->
     <script src="script.js"></script>
 </body>
 </html>
