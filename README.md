@@ -21,6 +21,14 @@ Um aplicativo web simples, rápido e responsivo para conversão de bases matemá
 - **CSS3**: Estilização moderna, responsiva e feedback visual de erros.
 - **JavaScript (Vanilla)**: Toda a lógica matemática e manipulação da interface (DOM) sem uso de bibliotecas ou frameworks externos.
 
+## 📂 Estrutura do Projeto
+
+O projeto foi dividido em três arquivos principais para melhor organização e boas práticas de desenvolvimento:
+
+- `index.html`: Contém a estrutura e a interface visual.
+- `style.css`: Contém todo o design e estilização do cartão de conversão.
+- `script.js`: Contém o motor de cálculo e a lógica de validação.
+
 
 
 
