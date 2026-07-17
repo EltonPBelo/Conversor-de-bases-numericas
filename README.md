@@ -30,7 +30,16 @@ O projeto foi dividido em três arquivos principais para melhor organização e 
 - `script.js`: Contém o motor de cálculo e a lógica de validação.
 
 
+## 💻 Como usar
 
+1. Faça o download ou clone este repositório.
+2. Certifique-se de que os três arquivos (`index.html`, `style.css` e `script.js`) estejam na mesma pasta.
+3. Dê um duplo clique no arquivo `index.html` para abri-lo no seu navegador padrão (Chrome, Firefox, Edge, Safari, etc.).
+4. Comece a digitar em qualquer um dos campos e veja a mágica acontecer!
+
+## 📝 Licença
+
+Este projeto é de uso livre e pode ser modificado ou distribuído conforme a sua necessidade.
 
 
 
