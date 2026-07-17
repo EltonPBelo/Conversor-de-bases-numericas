@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de Bases Numéricas</title>
+    <!-- Aqui chamamos o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <div class="converter-card">
+        <h2>Conversor de Bases</h2>
+        
+        <div class="input-group">
+            <label for="dec">Decimal (Base 10)</label>
+            <input type="text" id="dec" placeholder="Ex: 255" autocomplete="off">
+            <div class="error-msg" id="err-dec">Apenas números de 0 a 9 permitidos.</div>
+        </div>
+
+       
+    </div>
+
+    <!-- Aqui chamamos o arquivo JavaScript externo -->
+    <script src="script.js"></script>
 </body>
 </html>
