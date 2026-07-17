@@ -15,6 +15,13 @@ Um aplicativo web simples, rápido e responsivo para conversão de bases matemá
 - **Suporte a Números Grandes**: Utiliza `BigInt` no JavaScript para evitar os limites de precisão com números muito extensos.
 
 
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5**: Estrutura da página.
+- **CSS3**: Estilização moderna, responsiva e feedback visual de erros.
+- **JavaScript (Vanilla)**: Toda a lógica matemática e manipulação da interface (DOM) sem uso de bibliotecas ou frameworks externos.
+
+
 
 
 
