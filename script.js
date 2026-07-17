@@ -87,7 +87,8 @@ function copyToClipboard(baseId) {
     
     navigator.clipboard.writeText(inputEl.value)
         .then(() => {
-            // Feedback visual rápido no botão de copiar
+
+// Feedback visual rápido no botão de copiar
             const btn = inputEl.previousElementSibling.querySelector('.btn-copy');
             const originalText = btn.innerText;
             btn.innerText = '✅';
